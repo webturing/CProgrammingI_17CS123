@@ -1,4 +1,6 @@
-int ok(int n) {
+#include <stdio.h>
+/*判断一个数是否是平方数*/
+int square(int n) {
   int sq = sqrt(n) + 0.5;
   if (sq * sq == n)
     return 1;
@@ -9,6 +11,6 @@ int ok(int n) {
 int main() {
   int n;
   for (n = 100; n <= 999; n++)
-    if (ok(n)) printf("%d\n", n);
+    if (square(n)) printf("%d\n", n);
   return 0;
 }
