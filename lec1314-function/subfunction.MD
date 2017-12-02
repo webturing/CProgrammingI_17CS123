@@ -13,6 +13,12 @@
 
 ## 数值类函数: 返回值是数值
 - int add(int,int)
+- int max(int a,int b)
+
+## 布尔函数:返回值是0/1
+- isFlower(int n)
+- isPrimer(int n)
+
 
 ## 函数执行原理
 - 运行空间
