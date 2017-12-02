@@ -1,4 +1,5 @@
 #include <stdio.h>
+/*计算n的阶乘(n<=20)*/
 long long factorial(int n) {
   long long prd = 1;
   int i;
