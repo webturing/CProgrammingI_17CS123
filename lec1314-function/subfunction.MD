@@ -1,4 +1,4 @@
-# week12: 模块化程序设计subfunction(1) & array(1)
+# week12: 模块化程序设计subfunction
 # 函数作用
 1. 便于代码重用 （一段好代码可以用在各个程序中）
 2. 便于团队分工合作 
@@ -13,6 +13,12 @@
 
 ## 数值类函数: 返回值是数值
 - int add(int,int)
+- int max(int a,int b)
+
+## 布尔函数:返回值是0/1
+- isFlower(int n)
+- isPrimer(int n)
+
 
 ## 函数执行原理
 - 运行空间
@@ -23,7 +29,7 @@
 - top-down 自顶向下
 - recursive 
 
-##常用算法（更多请参阅algorithm.MD)
+## 常用算法（更多请参阅algorithm.MD)
 ### (1) 拆分整数位 (针对十进制数，R进制应该自己会变通(R=2,8,16))
 -- i.  获得末位n%10
 -- ii. 去除末位n/10
