@@ -1,26 +1,17 @@
-#include<stdio.h>
-int main()
-{
-    char s[100];
-    s[0]='0';
-    s[1]='0';
-
-    scanf("%s",s+2);
-
-    char a[100],b[100],c[100];
-    int n=strlen(s);
-    int w=n/3;
-   // if(n%3!=0)++w;
-    int x=n-2*w;
-
-    strcpy(c,s+(n-w));
-    puts(c);
-    s[n-w]=0;
-    strcpy(b,s+x);
-    puts(b);
-    s[n-2*w]=0;
-    strcpy(a,s);
-    puts(a);
-
-    return 0;
+#include <stdio.h>
+#include <string.h>
+int main() {
+  char s[100] = "00";
+  char m[100];
+  int a, b, c;
+  scanf("%s", m);
+  strcat(s, m);
+  int n = strlen(s), w = n / 3;
+  sscanf(s + (n - w), "%d", &c);
+  s[n - w] = 0;
+  sscanf(s + (n - 2 * w), "%d", &b);
+  s[n - 2 * w] = 0;
+  sscanf(s, "%d", &a);
+  printf("%d+%d-%d=%d\n", a, c, b, a + c - b);
+  return 0;
 }
