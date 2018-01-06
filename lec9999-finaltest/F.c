@@ -1,8 +1,7 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 //超时版本TLE:n=10000000 ~99999999  1.6s>1s
-//对称 abcddcba
+//对称 abcddcba优化 1000-9999
 
 int main() {
   // freopen("test.txt", "r", stdout);
